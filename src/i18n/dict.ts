@@ -16,13 +16,13 @@ export const dict = {
     common: {
       brand: "XOYAM",
       brandFull: "XOYAM (Afro Women Workshops)",
-      tagline: "De la terre au numérique, nous cultivons l'avenir des femmes africaines.",
+      tagline: "De la terre au numérique, nous cultivons l'avenir des femmes.",
       readMore: "Découvrir",
       back: "Retour",
     },
     home: {
-      h1Pre: "Unies \npar la solidarité,\n",
-      h1Accent: "propulsées \npar l'innovation.",
+      h1Pre: "Unies\n \npar la solidarité,\n",
+      h1Accent: "\npropulsées \npar l'innovation.",
       lead: "XOYAM accompagne les femmes entrepreneures et créatives d'Afrique et des Caraïbes — de la souveraineté alimentaire à l'EdTech, du mentorat au financement.",
       ctaPrimary: "Découvrir nos programmes",
       ctaSecondary: "Rejoindre la communauté",
