@@ -3,7 +3,6 @@ export type Lang = "fr" | "en";
 export const dict = {
   fr: {
     nav: {
-
       home: "Accueil",
       about: "À propos",
       pillars: "Nos piliers",
@@ -21,8 +20,8 @@ export const dict = {
       back: "Retour",
     },
     home: {
-      h1Pre: "Unies\n \npar la solidarité,\n",
-      h1Accent: "\npropulsées \npar l'innovation.",
+      h1Pre: "Unies\npar la solidarité,\n",
+      h1Accent: "propulsées\npar l'innovation.",
       lead: "XOYAM accompagne les femmes entrepreneures et créatives d'Afrique et des Caraïbes — de la souveraineté alimentaire à l'EdTech, du mentorat au financement.",
       ctaPrimary: "Découvrir nos programmes",
       ctaSecondary: "Rejoindre la communauté",
@@ -126,8 +125,8 @@ export const dict = {
       back: "Back",
     },
     home: {
-      h1Pre: "United by solidarity,",
-      h1Accent: "powered by innovation.",
+      h1Pre: "United\nby solidarity,\n",
+      h1Accent: "powered\nby innovation.",
       lead: "XOYAM supports women entrepreneurs and creatives across Africa and the Caribbean — from food sovereignty to EdTech, from mentorship to funding.",
       ctaPrimary: "Explore our programs",
       ctaSecondary: "Join the community",
@@ -216,4 +215,3 @@ export const dict = {
 
 export type Dict = (typeof dict)["fr"];
 export const getDict = (l: Lang): Dict => dict[l] as unknown as Dict;
-

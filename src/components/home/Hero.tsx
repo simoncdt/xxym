@@ -31,9 +31,8 @@ export function Hero() {
               </a>
             </div>
 
-            <h1 className="mt-2 font-display text-[2.6rem] font-medium leading-[0.96] tracking-[-0.035em] text-foreground sm:text-6xl lg:text-[5rem]">
+            <h1 className="mt-2 whitespace-pre-line font-display text-[2.6rem] font-medium leading-[0.96] tracking-[-0.035em] text-foreground sm:text-6xl lg:text-[5rem]">
               {t.home.h1Pre}
-              <br />
               <span className="italic text-gradient-brand">{t.home.h1Accent}</span>
             </h1>
 
