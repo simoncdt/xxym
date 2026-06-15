@@ -81,7 +81,7 @@ export const dict = {
       historyTitle: "Notre histoire",
       historyText: "XOYAM naît en 2015 de la volonté d'Angélique M. B. Diène de créer un espace où les femmes afrodescendantes peuvent entreprendre, se former et se soutenir mutuellement. De ses premières rencontres à Dakar aux ateliers animés à Montréal et en diaspora, l'organisation grandit en restant fidèle à une conviction : l'autonomisation des femmes africaines passe par l'éducation, le réseau et l'accès à des ressources concrètes.",
       xoyamLinkTitle: "XOYAM & Afro Women Workshops",
-      xoyamLinkText: "XOYAM est l'organisation derrière la plateforme Afro Women Workshops (afrowomenworkshops.com). Le nom XOYAM — mot wolof signifiant « élever, grandir » — incarne la vision continentale et identitaire du projet, tandis qu'Afro Women Workshops désigne le programme d'ateliers et la communauté en ligne accessible à la diaspora mondiale.",
+      xoyamLinkText: "XOYAM est l'organisation derrière la plateforme Afro Women Workshops. Le nom XOYAM — mot wolof signifiant « élever, grandir » — incarne la vision continentale et identitaire du projet, tandis qu'Afro Women Workshops désigne le programme d'ateliers et la communauté en ligne accessible à la diaspora mondiale.",
       foundersTitle: "Fondatrices",
       teamTitle: "L'équipe XOYAM",
       cellsTitle: "Cellules locales",
