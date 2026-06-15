@@ -157,14 +157,7 @@ function AboutPage() {
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 {t.about.xoyamLinkText}
               </p>
-              <a
-                href="https://afrowomenworkshops.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-[color:var(--magenta)] underline-offset-4 hover:underline"
-              >
-                
-              </a>
+
             </div>
           </div>
         </div>
@@ -347,4 +340,3 @@ function FounderCard({ founder: f, featured }: { founder: Founder; featured: boo
     </article>
   );
 }
-
