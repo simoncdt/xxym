@@ -12,23 +12,15 @@ export function Hero() {
       <div aria-hidden className="pattern-grain absolute inset-0 -z-10 opacity-40" />
 
       <div className="container-x relative">
-        
         <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.85fr]">
 
-          
           <div className="animate-fade-up">
-            
             <div className="mb-6 inline-flex flex-wrap items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2 text-xs text-muted-foreground">
               <span className="font-medium text-foreground">XOYAM</span>
               <span>est l'organisation derrière</span>
-              <a
-                href="https://afrowomenworkshops.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-[color:var(--magenta)] hover:underline underline-offset-2"
-              >
+              <span className="font-medium text-[color:var(--magenta)]">
                 Afro Women Workshops
-              </a>
+              </span>
             </div>
 
             <h1 className="mt-2 whitespace-pre-line font-display text-[2.6rem] font-medium leading-[0.96] tracking-[-0.035em] text-foreground sm:text-6xl lg:text-[5rem]">
@@ -40,7 +32,6 @@ export function Hero() {
               {t.home.lead}
             </p>
 
-            
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/programmes"
@@ -68,22 +59,16 @@ export function Hero() {
             </p>
           </div>
 
-          
           <div className="hidden lg:flex flex-col items-center justify-start pt-[3.5rem]">
-            
             <div
               aria-hidden
               className="absolute h-[420px] w-[420px] rounded-full bg-gradient-brand opacity-10 blur-[80px] pointer-events-none"
             />
-
-            
             <img
               src={logoNoir}
               alt="XOYAM — Afro Women Workshops"
               className="relative w-[340px] xl:w-[380px] drop-shadow-xl"
             />
-
-            
             <div
               className="animate-float-slow mt-6 w-full max-w-[200px] self-end rounded-2xl border border-border bg-card p-4 shadow-elegant"
               style={{ animationDelay: "0.8s" }}
@@ -99,7 +84,6 @@ export function Hero() {
         </div>
       </div>
 
-      
       <div className="relative mt-20 overflow-hidden border-y border-border bg-foreground py-4 text-background">
         <div className="flex animate-marquee gap-12 whitespace-nowrap font-display text-2xl italic sm:text-3xl">
           {Array.from({ length: 2 }).map((_, i) => (
@@ -117,4 +101,3 @@ export function Hero() {
     </section>
   );
 }
-
