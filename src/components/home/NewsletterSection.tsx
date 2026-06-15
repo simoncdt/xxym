@@ -10,21 +10,21 @@ export function NewsletterSection() {
   const handleSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
-    // TODO: wire to real newsletter provider
+
     setSent(true);
   };
 
   return (
     <section className="container-x py-14">
       <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card p-8 sm:p-12">
-        {/* Subtle brand accent */}
+        
         <div
           aria-hidden
           className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-gradient-brand opacity-10 blur-3xl"
         />
 
         <div className="relative grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-          {/* Left */}
+          
           <div>
             <div className="flex items-center gap-2 text-[color:var(--magenta)]">
               <Mail className="h-4 w-4" />
@@ -40,7 +40,7 @@ export function NewsletterSection() {
             </p>
           </div>
 
-          {/* Right — form */}
+          
           <div className="flex flex-col gap-3">
             {sent ? (
               <p className="rounded-2xl border border-border bg-secondary px-6 py-4 text-sm font-medium text-foreground">
@@ -70,3 +70,5 @@ export function NewsletterSection() {
     </section>
   );
 }
+
+

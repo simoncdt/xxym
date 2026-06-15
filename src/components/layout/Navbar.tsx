@@ -83,7 +83,7 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
+      
       <div
         className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-500 ${
           open ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
@@ -139,3 +139,5 @@ function LangToggle({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
     </div>
   );
 }
+
+

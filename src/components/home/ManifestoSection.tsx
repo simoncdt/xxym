@@ -36,41 +36,43 @@ function Sigil() {
         </linearGradient>
       </defs>
 
-      {/* Cercle extérieur */}
+      
       <circle cx="100" cy="100" r="90" fill="none" stroke="url(#grad-sigil)" strokeWidth="1.2" opacity="0.35" />
 
-      {/* 6 silhouettes féminines stylisées sur le cercle */}
+      
       {womenAngles.map((angle, i) => {
         const rad = (angle * Math.PI) / 180;
         const cx = 100 + 72 * Math.sin(rad);
         const cy = 100 - 72 * Math.cos(rad);
         return (
           <g key={i} transform={`translate(${cx}, ${cy})`}>
-            {/* Tête */}
+            
             <circle cx="0" cy="-9" r="4" fill="url(#grad-sigil)" opacity="0.9" />
-            {/* Corps */}
+            
             <path d="M0,-5 L-4,5 L4,5 Z" fill="url(#grad-sigil)" opacity="0.75" />
-            {/* Robe évasée */}
+            
             <path d="M-4,4 L-7,13 L7,13 L4,4 Z" fill="url(#grad-sigil)" opacity="0.55" />
           </g>
         );
       })}
 
-      {/* Tige centrale */}
+      
       <line x1="100" y1="128" x2="100" y2="88" stroke="url(#grad-sigil)" strokeWidth="2.2" strokeLinecap="round" />
 
-      {/* Feuille gauche */}
+      
       <path d="M100,112 Q82,96 88,78 Q97,92 100,104" fill="url(#grad-sigil)" opacity="0.85" />
-      {/* Feuille droite */}
+      
       <path d="M100,106 Q118,90 112,72 Q103,86 100,98" fill="url(#grad-sigil)" opacity="0.85" />
 
-      {/* Graine */}
+      
       <ellipse cx="100" cy="130" rx="6" ry="4.5" fill="url(#grad-sigil)" opacity="0.95" />
 
-      {/* Racines */}
+      
       <path d="M100,134 Q93,141 89,148" stroke="url(#grad-sigil)" strokeWidth="1.3" fill="none" strokeLinecap="round" opacity="0.5" />
       <path d="M100,134 L100,150" stroke="url(#grad-sigil)" strokeWidth="1.3" fill="none" strokeLinecap="round" opacity="0.5" />
       <path d="M100,134 Q107,141 111,148" stroke="url(#grad-sigil)" strokeWidth="1.3" fill="none" strokeLinecap="round" opacity="0.5" />
     </svg>
   );
 }
+
+

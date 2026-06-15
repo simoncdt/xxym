@@ -40,3 +40,5 @@ export function SectionHeader({ kicker, title, accent, lead, align = "left" }: P
     </div>
   );
 }
+
+

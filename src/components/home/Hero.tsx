@@ -12,12 +12,12 @@ export function Hero() {
       <div aria-hidden className="pattern-grain absolute inset-0 -z-10 opacity-40" />
 
       <div className="container-x relative">
-        {/* Grid: texte à gauche | logo à droite — alignement haut */}
+        
         <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.85fr]">
 
-          {/* ── LEFT: copy ── */}
+          
           <div className="animate-fade-up">
-            {/* Clarification */}
+            
             <div className="mb-6 inline-flex flex-wrap items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2 text-xs text-muted-foreground">
               <span className="font-medium text-foreground">XOYAM</span>
               <span>est l'organisation derrière</span>
@@ -40,7 +40,7 @@ export function Hero() {
               {t.home.lead}
             </p>
 
-            {/* 3 CTAs */}
+            
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/programmes"
@@ -68,22 +68,22 @@ export function Hero() {
             </p>
           </div>
 
-          {/* ── RIGHT: logo violet — aligné en haut avec le h1 ── */}
+          
           <div className="hidden lg:flex flex-col items-center justify-start pt-[3.5rem]">
-            {/* Soft glow backdrop */}
+            
             <div
               aria-hidden
               className="absolute h-[420px] w-[420px] rounded-full bg-gradient-brand opacity-10 blur-[80px] pointer-events-none"
             />
 
-            {/* Logo principal — grand */}
+            
             <img
               src={logoNoir}
               alt="XOYAM — Afro Women Workshops"
               className="relative w-[340px] xl:w-[380px] drop-shadow-xl"
             />
 
-            {/* Floating card */}
+            
             <div
               className="animate-float-slow mt-6 w-full max-w-[200px] self-end rounded-2xl border border-border bg-card p-4 shadow-elegant"
               style={{ animationDelay: "0.8s" }}
@@ -99,7 +99,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Marquee */}
+      
       <div className="relative mt-20 overflow-hidden border-y border-border bg-foreground py-4 text-background">
         <div className="flex animate-marquee gap-12 whitespace-nowrap font-display text-2xl italic sm:text-3xl">
           {Array.from({ length: 2 }).map((_, i) => (
@@ -117,3 +117,4 @@ export function Hero() {
     </section>
   );
 }
+

@@ -215,3 +215,4 @@ export const dict = {
 
 export type Dict = (typeof dict)["fr"];
 export const getDict = (l: Lang): Dict => dict[l] as unknown as Dict;
+

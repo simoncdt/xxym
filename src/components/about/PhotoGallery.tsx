@@ -8,7 +8,7 @@ import img5 from "@/assets/gallery/gallery3.png";
 import img6 from "@/assets/gallery/gallery4.png";
 import img7 from "@/assets/gallery/gallery5.png";
 import img8 from "@/assets/gallery/gallery6.png";
-// gallery7.png supprimée — format paysage
+
 
 const photos = [
   { src: img1, alt: "Aminata Semega" },
@@ -64,3 +64,5 @@ export function PhotoGallery() {
     </section>
   );
 }
+
+

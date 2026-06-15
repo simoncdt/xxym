@@ -16,7 +16,7 @@ export const Route = createFileRoute("/a-propos")({
   component: AboutPage,
 });
 
-/* ─── Founders — Élisabeth en tête (patronne du site) ─── */
+
 const founders = [
   {
     name: "Élisabeth Gnilane Faye",
@@ -90,7 +90,7 @@ function AboutPage() {
   const { t } = useLang();
   return (
     <Shell>
-      {/* ── HEADER with group photo ── */}
+      
       <section className="relative overflow-hidden">
         <div className="container-x pt-16 sm:pt-24">
           <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -109,7 +109,7 @@ function AboutPage() {
             </div>
           </div>
         </div>
-        {/* Full-width group photo below header */}
+        
         <div className="container-x mt-12">
           <div className="relative overflow-hidden rounded-[2rem] shadow-2xl">
             <img
@@ -128,7 +128,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ── NOTRE HISTOIRE ── */}
+      
       <section className="container-x mt-20 sm:mt-28">
         <div className="grid gap-8 lg:grid-cols-[1fr_1.6fr] lg:items-start">
           <div>
@@ -145,7 +145,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ── XOYAM & Afro Women Workshops ── */}
+      
       <section className="container-x mt-12 sm:mt-16">
         <div className="rounded-3xl border border-border bg-white p-8 sm:p-12">
           <div className="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-12">
@@ -170,14 +170,14 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ── MISSION · VISION · VALEURS ── */}
+      
       <section className="container-x mt-20 sm:mt-28">
         <div className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[color:var(--magenta)]">
           <span className="inline-block h-px w-8 bg-[color:var(--magenta)]" />
           Mission · Vision · Valeurs
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Mission */}
+          
           <div className="group col-span-full rounded-3xl border border-border bg-white p-8 transition-all hover:bg-[color:var(--magenta)] hover:border-[color:var(--magenta)] lg:col-span-1">
             <div className="font-display text-5xl text-[color:var(--magenta)] opacity-30 group-hover:text-white">M</div>
             <h4 className="mt-2 font-display text-2xl text-foreground group-hover:text-white">Mission</h4>
@@ -185,7 +185,7 @@ function AboutPage() {
               Autonomiser les femmes entrepreneures africaines et caribéennes grâce à des outils, des formations et un réseau collaboratif puissant.
             </p>
           </div>
-          {/* Vision */}
+          
           <div className="group rounded-3xl border border-border bg-white p-8 transition-all hover:bg-[color:var(--magenta)] hover:border-[color:var(--magenta)]">
             <div className="font-display text-5xl text-[color:var(--magenta)] opacity-30 group-hover:text-white">V</div>
             <h4 className="mt-2 font-display text-2xl text-foreground group-hover:text-white">Vision</h4>
@@ -193,7 +193,7 @@ function AboutPage() {
               Construire un avenir équitable et durable où le leadership féminin transforme les sociétés et stimule la croissance mondiale.
             </p>
           </div>
-          {/* Valeurs */}
+          
           <div className="group rounded-3xl border border-border bg-white p-8 transition-all hover:bg-[color:var(--magenta)] hover:border-[color:var(--magenta)]">
             <div className="font-display text-5xl text-[color:var(--gold)] opacity-30 group-hover:text-white">V</div>
             <h4 className="mt-2 font-display text-2xl text-foreground group-hover:text-white">Valeurs</h4>
@@ -212,7 +212,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ── FONDATRICES — Élisabeth en tête ── */}
+      
       <section className="container-x mt-20 sm:mt-28">
         <h3 className="font-display text-3xl text-foreground sm:text-4xl">{t.about.foundersTitle}</h3>
         <div className="mt-10 space-y-5">
@@ -222,7 +222,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ── ÉQUIPE ── */}
+      
       <section className="container-x mt-20 sm:mt-28">
         <div className="flex items-end justify-between">
           <h3 className="font-display text-3xl text-foreground sm:text-4xl">{t.about.teamTitle}</h3>
@@ -251,14 +251,14 @@ function AboutPage() {
         </ul>
       </section>
 
-      {/* ── CELLULES LOCALES — Sénégal + Canada ── */}
+      
       <section className="container-x mt-20 sm:mt-28 pb-24">
         <div className="flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[color:var(--magenta)] mb-8">
           <span className="inline-block h-px w-8 bg-[color:var(--magenta)]" />
           {t.about.cellsTitle}
         </div>
         <div className="grid gap-5 sm:grid-cols-2">
-          {/* Sénégal */}
+          
           <div className="rounded-3xl border border-border bg-white p-8">
             <div className="flex items-end justify-between">
               <div>
@@ -273,7 +273,7 @@ function AboutPage() {
               <div className="font-display text-5xl text-gradient-brand leading-none ml-6">SN</div>
             </div>
           </div>
-          {/* Canada */}
+          
           <div className="rounded-3xl border border-border bg-white p-8">
             <div className="flex items-end justify-between">
               <div>
@@ -290,13 +290,13 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      {/* ── GALERIE PHOTOS ── */}
+      
       <PhotoGallery />
     </Shell>
   );
 }
 
-/* ── Founder card with real photo ── */
+
 type Founder = { name: string; role: string; bio: string; initials: string; photo: string | null };
 
 function FounderCard({ founder: f, featured }: { founder: Founder; featured: boolean }) {
@@ -307,7 +307,7 @@ function FounderCard({ founder: f, featured }: { founder: Founder; featured: boo
       }`}
     >
       <div className="flex flex-col gap-0 sm:flex-row">
-        {/* Photo or initials avatar */}
+        
         <div className="relative shrink-0 h-40 sm:h-auto sm:w-[160px] lg:w-[190px] overflow-hidden">
           {f.photo ? (
             <img
@@ -320,7 +320,7 @@ function FounderCard({ founder: f, featured }: { founder: Founder; featured: boo
               {f.initials}
             </div>
           )}
-          {/* gradient overlay on photo side */}
+          
           {f.photo && (
             <div
               className={`absolute inset-y-0 right-0 w-16 bg-gradient-to-r ${
@@ -331,7 +331,7 @@ function FounderCard({ founder: f, featured }: { founder: Founder; featured: boo
           )}
         </div>
 
-        {/* Text content */}
+        
         <div className="flex flex-1 flex-col justify-center p-7">
           <h4 className="font-display leading-tight text-2xl text-foreground group-hover:text-white">
             {f.name}
@@ -347,3 +347,4 @@ function FounderCard({ founder: f, featured }: { founder: Founder; featured: boo
     </article>
   );
 }
+

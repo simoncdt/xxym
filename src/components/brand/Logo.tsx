@@ -14,13 +14,7 @@ const srcMap: Record<Variant, string> = {
   gold: logoJaune,
 };
 
-/**
- * XOYAM logo — uses the official brand artwork.
- * variant="dark"   → black logo (default, for light backgrounds)
- * variant="light"  → white logo (for dark backgrounds, footer, dark sections)
- * variant="violet" → purple logo (for neutral/light accent contexts)
- * variant="gold"   → golden logo (for dark backgrounds with warm accent)
- */
+
 export function Logo({ variant = "dark", compact = false, className = "" }: Props) {
   const src = srcMap[variant];
   const h = compact ? "h-8" : "h-10 sm:h-11";
@@ -35,3 +29,5 @@ export function Logo({ variant = "dark", compact = false, className = "" }: Prop
     </Link>
   );
 }
+
+
