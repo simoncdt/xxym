@@ -8,7 +8,7 @@ import img5 from "@/assets/gallery/gallery3.png";
 import img6 from "@/assets/gallery/gallery4.png";
 import img7 from "@/assets/gallery/gallery5.png";
 import img8 from "@/assets/gallery/gallery6.png";
-
+import img9 from "@/assets/gallery/gallery8.jpg";
 
 const photos = [
   { src: img1, alt: "Aminata Semega" },
@@ -19,6 +19,7 @@ const photos = [
   { src: img6, alt: "XOYAM Atelier 4" },
   { src: img7, alt: "XOYAM Atelier 5" },
   { src: img8, alt: "XOYAM Atelier 6" },
+  { src: img9, alt: "Portrait — XOYAM" },
 ];
 
 export function PhotoGallery() {

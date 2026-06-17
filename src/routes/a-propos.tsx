@@ -11,6 +11,8 @@ import photoTrioAbout from "@/assets/photo-trio-vrai.webp";
 import logoNoir from "@/assets/logo-noir.png";
 import tof from "@/assets/ny.jpeg";
 import { PhotoGallery } from "@/components/about/PhotoGallery";
+import photoStefdekarda from "@/assets/stefdekarda.jpeg";
+import photoFatou from "@/assets/fatou.jpeg";
 
 export const Route = createFileRoute("/a-propos")({
   component: AboutPage,
@@ -51,14 +53,14 @@ const founders = [
     role: "Admnistratrice",
     bio: "Admin",
     initials: "SK",
-    photo: null,
+    photo: photoStefdekarda,
   },
   {
     name: "Fatou Cissé",
     role: "Admnistratrice",
     bio: "Admin",
     initials: "FC",
-    photo: null,
+    photo: photoFatou,
   },
 ];
 
