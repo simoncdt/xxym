@@ -32,7 +32,7 @@ export function PhotoGallery() {
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+      <div className="grid grid-cols-3 gap-3 sm:gap-4">
         {photos.map((p, i) => (
           <Dialog key={i}>
             <DialogTrigger asChild>
