@@ -28,7 +28,7 @@ export function ManifestoSection() {
 function Sigil() {
   const womenAngles = [0, 60, 120, 180, 240, 300];
   return (
-    <svg viewBox="0 0 200 200" className="h-72 w-72" aria-hidden="true">
+    <svg viewBox="0 0 200 200" className="h-130 w-130" aria-hidden="true">
       <defs>
         <linearGradient id="grad-sigil" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="oklch(0.56 0.24 350)" />
